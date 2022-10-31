@@ -22,4 +22,8 @@ public class Categoria {
     public String getDescription() {
         return description;
     }
+
+    public CategoriaDTO toDto(){
+        return new CategoriaDTO(this.description);
+    }
 }
